@@ -1,0 +1,22 @@
+[
+  {"id":"01","expected":"Billing","challenging":false,"message":"I've been charged twice for my mobile bill this month. Can you refund the duplicate payment?"},
+  {"id":"02","expected":"Billing","challenging":false,"message":"Can you send me a copy of my September invoice?"},
+  {"id":"03","expected":"Other","challenging":false,"message":"How do I update the postal address associated with my customer account?"},
+  {"id":"04","expected":"Technical","challenging":false,"message":"My home broadband has stopped working completely since yesterday."},
+  {"id":"05","expected":"Technical","challenging":false,"message":"My router keeps disconnecting every ten minutes. Can someone help fix it?"},
+  {"id":"06","expected":"Technical","challenging":false,"message":"I can't make or receive calls, even though my phone shows full signal."},
+  {"id":"07","expected":"Cancellation","challenging":false,"message":"I want to cancel my broadband contract at the end of this month."},
+  {"id":"08","expected":"Cancellation","challenging":false,"message":"Please close my mobile account. I no longer need the number."},
+  {"id":"09","expected":"Other","challenging":false,"message":"Can you tell me how to submit a formal complaint about my experience in your store?"},
+  {"id":"10","expected":"Sales","challenging":false,"message":"I'd like to upgrade my current phone to the latest iPhone. What are my options?"},
+  {"id":"11","expected":"Sales","challenging":false,"message":"How much would it cost to add an unlimited-data SIM to my account?"},
+  {"id":"12","expected":"Other","challenging":false,"message":"What accessibility support do you provide for customers with hearing impairments?"},
+  {"id":"13","expected":"Billing","challenging":true,"message":"My broadband has been down for three days. I don't need technical help anymore because it's working now, but I'd like a refund for the days without service."},
+  {"id":"14","expected":"Billing","challenging":true,"message":"I upgraded my phone last month and now my bill is higher than the price I agreed. Can you correct the charges?"},
+  {"id":"15","expected":"Technical","challenging":true,"message":"I'm thinking of cancelling because my mobile data hasn't worked properly for weeks. Before I decide, can you help get it working?"},
+  {"id":"16","expected":"Cancellation","challenging":true,"message":"I've had repeated broadband faults and the price has gone up. I've decided to leave, so please terminate my contract."},
+  {"id":"17","expected":"Cancellation","challenging":true,"message":"I received a cheaper offer from another network. I'm not looking for a matching deal; I want to cancel my current mobile service."},
+  {"id":"18","expected":"Sales","challenging":true,"message":"My phone battery barely lasts half a day. Rather than getting it repaired, I'd like to buy a newer handset."},
+  {"id":"19","expected":"Sales","challenging":true,"message":"My broadband deal is nearly finished and I'm considering leaving. What faster packages could you offer if I stay?"},
+  {"id":"20","expected":"Other","challenging":true,"message":"I received a text claiming to be from O2 asking me to verify my identity through a link. Is it genuinely from you?"}
+]

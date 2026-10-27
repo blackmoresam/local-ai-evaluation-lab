@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local AI Evaluation Lab</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar"><div class="brand"><span class="mark">E</span><span>Evaluation Lab <small>LOCAL EXPERIMENT</small></span></div><span class="top-note">20 fixed telecom enquiries · primary intent</span></header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">PROMPT EXPERIMENT</p><h1>See what changes when the prompt changes.</h1><p class="intro">Classify the same approved customer enquiries, inspect mistakes, and compare two preserved runs. A changed answer is an observation; one run per prompt cannot prove its cause.</p></div>
+      <div class="dataset-chip"><strong>20</strong><span>FROZEN CASES<br>4 PER CATEGORY<br>8 CHALLENGING</span></div>
+    </section>
+
+    <section class="card workbench">
+      <div class="section-head"><div><p class="eyebrow">01 / SETUP</p><h2>Classifier prompt</h2></div><span id="keyStatus" class="status-pill">Checking API key…</span></div>
+      <label for="prompt">Edit the instructions given to the classifier</label>
+      <textarea id="prompt" rows="8" spellcheck="true"></textarea>
+      <div class="runbar"><div class="mode-choice"><label><input type="radio" name="mode" value="real" checked> Real model</label><label><input type="radio" name="mode" value="mock"> Explicit mock</label></div><button id="runButton" type="button">Run 20-case evaluation <span aria-hidden="true">→</span></button></div>
+      <p id="modeNote" class="note"></p><p id="status" class="live-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="card" id="resultsSection">
+      <div class="section-head"><div><p class="eyebrow">02 / RESULTS</p><h2>Evaluation results</h2></div><select id="runSelect" aria-label="Select a saved run"><option value="">No runs yet</option></select></div>
+      <div id="results" class="empty">Run the fixed dataset to see accuracy, category performance, mistakes, and the confusion matrix.</div>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><div><p class="eyebrow">03 / COMPARE</p><h2>Observed case-level changes</h2></div></div>
+      <div class="compare-controls"><label>Earlier run<select id="firstRun"></select></label><label>Later run<select id="secondRun"></select></label><button id="compareButton" type="button" class="secondary">Compare runs</button></div>
+      <div id="comparison" class="empty">Save two runs to compare their predictions case by case.</div>
+    </section>
+    <footer>The score is a diagnostic, not a business verdict. Review where errors move, especially across categories.</footer>
+  </main>
+</body>
+</html>
